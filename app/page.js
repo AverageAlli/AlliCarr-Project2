@@ -8,7 +8,7 @@ export default function Home() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch('/api/cards')
+    fetch('/api/cards/[id].js')
       .then((response) => {
         if (!response.ok) {
           throw new Error('Failed to fetch cards');
